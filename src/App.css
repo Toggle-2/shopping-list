@@ -1,0 +1,85 @@
+:root {
+  /* overflow: hidden; */
+  user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body{
+  min-height: 90vh;
+  background-color: #606a7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Add-button {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: calc(10vh + 40px);
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: hidden;
+  box-shadow: 0px 2px 10px 2px black;
+  background-color: #0d2d6e;
+  color: #fff;
+  margin: 20px 20px 0px 20px;
+  transition-duration: 200ms;
+}
+
+.Add-button svg {
+  height: 60px;
+  width: 60px;
+  transition-duration: 200ms;
+}
+
+.Add-button path {
+  fill: #fff;
+}
+
+.Add-item {
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  top: calc(10vh + 160px);
+  font-size: 25px;
+  font-weight: 800;
+  background-color: #0d2d6e;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.Add-button:active path {
+  fill: #000;
+}
+
+.Add-button:active svg {
+  height: 50px;
+  width: 50px;
+}
+
+.Add-button:active {
+  width: 80px;
+  height: 80px;
+  top: calc(10vh + 70px);
+  left: 25px;
+  background-color: #717c92;
+  box-shadow: 0px 4px 30px 4px black;
+  font-size: 14px;
+}
